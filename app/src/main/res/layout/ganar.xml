@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoganar"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <android.support.constraint.Guideline
+        android:id="@+id/linea1titulo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"
+        tools:layout_editor_absoluteY="179dp"
+        tools:layout_editor_absoluteX="0dp" />
+    <android.support.constraint.Guideline
+        android:id="@+id/linea2titulo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2"
+        tools:layout_editor_absoluteY="179dp"
+        tools:layout_editor_absoluteX="0dp" />
+    <android.support.constraint.Guideline
+        android:id="@+id/linea1hori"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25"
+        tools:layout_editor_absoluteY="179dp"
+        tools:layout_editor_absoluteX="0dp" />
+    <android.support.constraint.Guideline
+        android:id="@+id/linea2hori"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35"
+        tools:layout_editor_absoluteY="240dp"
+        tools:layout_editor_absoluteX="0dp" />
+    <android.support.constraint.Guideline
+        android:id="@+id/linea3hori"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37"
+        tools:layout_editor_absoluteY="246dp"
+        tools:layout_editor_absoluteX="0dp" />
+    <android.support.constraint.Guideline
+        android:id="@+id/linea4hori"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.47"
+        tools:layout_editor_absoluteY="307dp"
+        tools:layout_editor_absoluteX="0dp" />
+    <android.support.constraint.Guideline
+        android:id="@+id/linea5hori"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.49"
+        tools:layout_editor_absoluteY="409dp"
+        tools:layout_editor_absoluteX="0dp" />
+    <android.support.constraint.Guideline
+        android:id="@+id/linea6hori"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.59"
+        tools:layout_editor_absoluteY="460dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/linea7hori"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.82"
+        tools:layout_editor_absoluteY="460dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/linea8hori"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"
+        tools:layout_editor_absoluteY="460dp"
+        tools:layout_editor_absoluteX="0dp" />
+    <android.support.constraint.Guideline
+        android:id="@+id/linea1ver"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="115dp" />
+    <android.support.constraint.Guideline
+        android:id="@+id/linea2ver"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="269dp" />
+    <android.support.constraint.Guideline
+        android:id="@+id/linea25ver"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="269dp" />
+    <android.support.constraint.Guideline
+        android:id="@+id/linea3ver"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="269dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/linea1vertitulo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="269dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/linea2vertitulo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="269dp" />
+
+
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/botonsalirganar"
+        android:background="@drawable/botonsalir"
+        app:layout_constraintBottom_toTopOf="@+id/linea8hori"
+        app:layout_constraintRight_toLeftOf="@+id/linea3ver"
+        app:layout_constraintLeft_toLeftOf="@+id/linea25ver"
+        app:layout_constraintTop_toTopOf="@+id/linea7hori" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/botonreiniciar"
+        android:background="@drawable/reiniciarganar"
+        app:layout_constraintBottom_toTopOf="@+id/linea8hori"
+        app:layout_constraintRight_toLeftOf="@+id/linea1ver"
+        app:layout_constraintLeft_toLeftOf="@+id/linea1vertitulo"
+        app:layout_constraintTop_toTopOf="@+id/linea7hori" />
+
+
+</android.support.constraint.ConstraintLayout>

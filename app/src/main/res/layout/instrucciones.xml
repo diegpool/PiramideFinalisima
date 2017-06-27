@@ -1,0 +1,75 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/fondointro"
+
+    >
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/hori1text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0"
+        />
+    <android.support.constraint.Guideline
+        android:id="@+id/hori2text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"
+        />
+
+
+
+
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/linea1hori"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.81"
+        />
+    <android.support.constraint.Guideline
+        android:id="@+id/linea2hori"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.94"
+        />
+    <android.support.constraint.Guideline
+        android:id="@+id/linea1ver"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35"
+        />
+    <android.support.constraint.Guideline
+        android:id="@+id/linea2ver"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65"
+        />
+
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/botonvolver"
+
+        android:background="@drawable/botonvolver"
+        app:layout_constraintLeft_toRightOf="@id/linea1ver"
+        app:layout_constraintRight_toLeftOf="@id/linea2ver"
+        app:layout_constraintTop_toBottomOf="@id/linea1hori"
+        app:layout_constraintBottom_toTopOf="@id/linea2hori"
+        />
+
+</android.support.constraint.ConstraintLayout>

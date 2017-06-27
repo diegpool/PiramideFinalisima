@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.diego.piramidefinalisima.MainActivity"
+    android:id="@+id/cl1">
+    <android.support.constraint.Guideline
+        android:id="@+id/linea1hori"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0"
+        />
+    <android.support.constraint.Guideline
+        android:id="@+id/linea2hori"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/linea3hori"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.89"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/linea4hori"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.99"
+        />
+    <android.support.constraint.Guideline
+        android:id="@+id/linea1ver"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7"
+        />
+    <android.support.constraint.Guideline
+        android:id="@+id/linea2ver"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"
+        />
+    <android.support.constraint.Guideline
+        android:id="@+id/linea11ver"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"
+        />
+    <android.support.constraint.Guideline
+        android:id="@+id/linea22ver"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3"
+        />
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cronometro"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/jugadas"
+        android:textSize="100dp"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toRightOf="@id/linea11ver"
+        app:layout_constraintRight_toLeftOf="@id/linea22ver"
+        app:layout_constraintTop_toBottomOf="@id/linea1hori"
+        app:layout_constraintBottom_toTopOf="@id/linea2hori"
+        android:background="@drawable/botondeshacer"
+        android:id="@+id/undo"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toRightOf="@id/linea1ver"
+        app:layout_constraintRight_toLeftOf="@id/linea2ver"
+        app:layout_constraintTop_toBottomOf="@id/linea3hori"
+        app:layout_constraintBottom_toTopOf="@id/linea4hori"
+        android:background="@drawable/botonreiniciar"
+        android:id="@+id/reinicar"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/salirjuego"
+
+        android:background="@drawable/botonsalirjuego"
+        app:layout_constraintLeft_toRightOf="@id/linea1ver"
+        app:layout_constraintRight_toLeftOf="@id/linea2ver"
+        app:layout_constraintTop_toBottomOf="@id/linea1hori"
+        app:layout_constraintBottom_toTopOf="@id/linea2hori"/>
+
+</android.support.constraint.ConstraintLayout>
