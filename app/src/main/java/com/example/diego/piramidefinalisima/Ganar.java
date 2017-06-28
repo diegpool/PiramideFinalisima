@@ -16,17 +16,22 @@ public class Ganar extends AppCompatActivity {
         Intent pasomenu = new Intent(this, Menu.class);
         startActivity(pasomenu);
     }
+    @Override protected void onPause() {
+        super.onPause();
+        cancion_victoria.stop();
+        finish();
+    }
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ganar);
         final Intent pasomain = new Intent(Ganar.this, MainActivity.class);
 
         cancion_victoria = MediaPlayer.create(this,R.raw.sonidovictoria);
-        Button boton_iniciar = (Button) findViewById(R.id.botoniniciar);
+        Button boton_reiniciar = (Button) findViewById(R.id.botonreiniciar);
         Button boton_salir = (Button) findViewById(R.id.botonsalirganar);
 
         cancion_victoria.start();
-        boton_iniciar.setOnClickListener(new View.OnClickListener() {
+        boton_reiniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 cancion_victoria.stop();

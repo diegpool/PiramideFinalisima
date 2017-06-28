@@ -76,6 +76,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(pasomenu);
     }
 
+    @Override protected void onPause() {
+        super.onPause();
+        cancion_juego.stop();
+        finish();
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -308,7 +314,7 @@ public class MainActivity extends AppCompatActivity {
                                     startActivity(pasoganar);
                                 }
                                 if(!Comprobarpierde()){     /*** Luego de que se complete la jugada , se revisa si el jugador pierde.**/
-                                    DisplayToast(getApplicationContext(),"Pierdequen");
+                                    DisplayToast(getApplicationContext(),"No quedan movimiento válidos");
                                 }
 
 
@@ -447,9 +453,8 @@ public class MainActivity extends AppCompatActivity {
                                         startActivity(pasoganar);
                                     }
                                     if(!Comprobarpierde()){ /*** Comprobamos si después de realizada la jugada el jugador pierde**/
-                                        DisplayToast(getApplicationContext(),"Pierdequen");
+                                        DisplayToast(getApplicationContext(),"No quedan movimiento válidos");
                                     }
-
                                     break;
                             }
                         }

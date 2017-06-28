@@ -18,6 +18,11 @@ public class Instrucciones extends AppCompatActivity {
         Intent pasomenu = new Intent(this, Menu.class);
         startActivity(pasomenu);
     }
+    @Override protected void onPause() {
+        super.onPause();
+        cancion_instrucciones.stop();
+        finish();
+    }
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.instrucciones);

@@ -29,6 +29,12 @@ public class Menu extends AppCompatActivity {
         finish();
     }
 
+    @Override protected void onPause() {
+        super.onPause();
+        cancion_menu.stop();
+        finish();
+    }
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu);
