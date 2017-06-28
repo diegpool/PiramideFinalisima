@@ -55,7 +55,7 @@ public class Menu extends AppCompatActivity {
         cancion_menu.setLooping(true);
         cancion_menu.start();
 
-        //getSupportActionBar().hide();
+        getSupportActionBar().hide();           /*** Se esconde la barra superior**/
         boton_iniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

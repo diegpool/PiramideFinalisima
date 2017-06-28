@@ -29,6 +29,7 @@ public class Ganar extends AppCompatActivity {
         cancion_victoria = MediaPlayer.create(this,R.raw.sonidovictoria);
         Button boton_reiniciar = (Button) findViewById(R.id.botonreiniciar);
         Button boton_salir = (Button) findViewById(R.id.botonsalirganar);
+        getSupportActionBar().hide();           /*** Se esconde la barra superior**/
 
         cancion_victoria.start();
         boton_reiniciar.setOnClickListener(new View.OnClickListener() {

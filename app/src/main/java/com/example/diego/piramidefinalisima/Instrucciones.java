@@ -29,7 +29,7 @@ public class Instrucciones extends AppCompatActivity {
         final Intent pasomenu = new Intent(Instrucciones.this, Menu.class);
         cancion_instrucciones = MediaPlayer.create(this,R.raw.cancionintru);
         Button boton_volver = (Button) findViewById(R.id.botonvolver);
-        //getSupportActionBar().hide();
+        getSupportActionBar().hide();           /*** Se esconde la barra superior**/
         cancion_instrucciones.setLooping(true);
         cancion_instrucciones.start();
         boton_volver.setOnClickListener(new View.OnClickListener() {
